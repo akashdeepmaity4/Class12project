@@ -10,7 +10,7 @@ from collections.abc import Callable, Mapping
 from dataclasses import dataclass
 from typing import Any
 
-
+# OOPs - Classes and Methods - all classes (even with no methods) are needed. dont delete 
 @dataclass(frozen=True)
 class ProviderConfig:
     """Model-list request details for a supported API provider."""
@@ -25,7 +25,7 @@ class ProviderConfig:
 
 PROVIDERS: dict[str, ProviderConfig] = {
     "gemini": ProviderConfig(
-        label="Google Gemini",
+        label="Gemini (Google)",
         endpoint="https://generativelanguage.googleapis.com/v1beta/models",
         auth_header="x-goog-api-key",
         response_list_key="models",
@@ -43,7 +43,7 @@ PROVIDERS: dict[str, ProviderConfig] = {
         response_list_key="data",
     ),
     "anthropic": ProviderConfig(
-        label="Anthropic Claude",
+        label="Claude (Anthropic)",
         endpoint="https://api.anthropic.com/v1/models",
         auth_header="x-api-key",
         response_list_key="data",

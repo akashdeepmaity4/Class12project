@@ -134,7 +134,7 @@ class RawSTRaPApp:
             subtitle_y=181,
             title_size=35,
             buttons=(
-                {"bounds": (172, 402, 407, 449), "label": "Continue", "font_size": 15},
+                {"bounds": (172, 402, 407, 449), "label": "Next", "font_size": 15},
                 {"bounds": (221, 464, 346, 503), "label": "Go Back ←", "font_size": 12},
             ),
         )
@@ -180,12 +180,12 @@ class RawSTRaPApp:
             child.destroy()
 
         canvas = self._draw_shell()
-        process_button = {"bounds": (172, 438, 407, 482), "label": "PROCESS", "font_size": 13}
+        process_button = {"bounds": (172, 438, 407, 482), "label": "SEND PAYLOAD", "font_size": 13}
         back_button = {"bounds": (221, 491, 346, 530), "label": "Go Back ←", "font_size": 12}
         process_art_id = self._set_art(
             canvas,
             title="RawSTRaP",
-            subtitle="Paste the text you want to structure",
+            subtitle="Paste the text you want to structure into a database",
             title_y=88,
             subtitle_y=145,
             title_size=30,
@@ -717,7 +717,7 @@ class RawSTRaPApp:
             if not database_directory.is_dir():
                 raise FileNotFoundError(f"Database directory not found: {database_directory}")
             if sys.platform == "win32":
-                os.startfile(database_directory)  # type: ignore[attr-defined]
+                os.startfile(database_directory) 
             elif sys.platform == "darwin":
                 subprocess.Popen(["open", str(database_directory)])
             else:
@@ -735,20 +735,18 @@ class RawSTRaPApp:
         self._set_art(
             self.process_canvas,
             title="RawSTRaP",
-            subtitle="Paste the text you want to structure",
+            subtitle="Paste the text you want to structure into a database",
             title_y=88,
             subtitle_y=145,
             title_size=30,
             buttons=(self.process_button_art, self.input_back_button_art),
         )
 
-
 def launch(provider: str = "", api_key: str = "", model_id: str = "") -> None:
     """Open the application, optionally with a validated provider session."""
     root = tk.Tk()
     RawSTRaPApp(root, provider=provider, api_key=api_key, model_id=model_id)
     root.mainloop()
-
 
 if __name__ == "__main__":
     launch()
