@@ -15,6 +15,7 @@ from pathlib import Path
 from tkinter import filedialog, messagebox, simpledialog, ttk
 from typing import Any, Callable
 
+# Constants and module-level state
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 PARSER_PATH = Path(__file__).with_name("parser.py")
