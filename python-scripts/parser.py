@@ -1,7 +1,7 @@
 """Send source text to a CSV-producing API and persist the returned records.
 
 API contract
-------------
+
 The endpoint accepts a JSON POST body shaped like ``{"text": "..."}`` and
 returns either CSV text directly or JSON containing that text in a ``csv``,
 ``content``, or ``text`` field. Configure the endpoint with

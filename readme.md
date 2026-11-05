@@ -1,10 +1,18 @@
 # Raw Source Text to Relation Parser - Project Details
 
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![MySQL](https://img.shields.io/badge/MySQL-darkblue?style=for-the-badge&logo=mysql&logoColor=ffdd54)
+![SQLite](https://img.shields.io/badge/SQLite-351111?style=for-the-badge&logo=sqlite&logoColor=ffdd54)
+![Git CLI](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
-## Synopsys
+## What is it?
 
 
-Raw Source Text to Relation Parser : Python Application to turn everyday conversation into AI-guided SQL database for meetings, classes or notes. 
+![class 12](https://shields.io/badge/Class-12-green)
+![ MIT license](https://shields.io/badge/MIT-License-yellow)
+
+Raw Source Text to Relation Parser is a Python-based text parsing tool designed to transform unstructured human-language content into a structured relational database using SQL. Its core purpose is to take raw unordered source text, identify meaningful entities and relationships, and convert them into database-ready data that can be queried, analyzed, and reused.
 
 ## Pipeline
 
@@ -30,9 +38,9 @@ User enters a API provider and an API. the API field is then locked in for the s
 
 ### 2. Native Python Script
 
-- go to the [Github Repository](https://github.com/akashdeepmaity4/rawstrap) and download the source code.
+- go to the [Github Repository](https://github.com/akashdeepmaity4/class12project) and download the source code.
 ```bash
-git clone https://github.com/akashdeepmaity4/rawstrap
+git clone https://github.com/akashdeepmaity4/class12project
 ```
 - save it to your desired directory.
 - run the run.py file via python
