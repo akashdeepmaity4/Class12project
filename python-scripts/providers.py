@@ -22,7 +22,6 @@ class ProviderConfig:
     extra_headers: tuple[tuple[str, str], ...] = ()
     api_key_query_parameter: bool = False
 
-
 PROVIDERS: dict[str, ProviderConfig] = {
     "gemini": ProviderConfig(
         label="Gemini (Google)",
