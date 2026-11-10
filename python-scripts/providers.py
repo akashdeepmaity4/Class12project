@@ -1,4 +1,4 @@
-"""Provider-specific model checks and CSV text generation adapters."""
+"""Provider-specific model checks and CSV text generation"""
 
 from __future__ import annotations
 
